@@ -80,6 +80,8 @@
     &.-portfolio{&::before{content: "CONSTRUCTION PORTFOLIO"; white-space: nowrap;}}// 施工例
     &.-owner{&::before{content: "OWNER VOICE"; white-space: nowrap;}}               // オーナー
 
+
+    &.-torikumi{&::before{content: "MAIN EFFORTS"; white-space: nowrap;}}            // サンプル
     &.-sample{&::before{content: "CONTENT TITLE"; white-space: nowrap;}}            // サンプル
 }
 
