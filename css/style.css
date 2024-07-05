@@ -308,6 +308,9 @@ h1.-white, h2.-white, h3.-white, h4.-white, h5.-white, h6.-white, p.-white, a.-w
 h1.-black, h2.-black, h3.-black, h4.-black, h5.-black, h6.-black, p.-black, a.-black, span.-black, label.-black, button.-black {
   color: #3b3b3b !important;
 }
+h1.-red, h2.-red, h3.-red, h4.-red, h5.-red, h6.-red, p.-red, a.-red, span.-red, label.-red, button.-red {
+  color: #df2323 !important;
+}
 h1.-color01, h2.-color01, h3.-color01, h4.-color01, h5.-color01, h6.-color01, p.-color01, a.-color01, span.-color01, label.-color01, button.-color01 {
   color: rgba(73, 119, 188, 0.4235294118) !important;
 }
@@ -4552,6 +4555,96 @@ button.swiper-pagination-bullet {
     z-index: 1;
   }
 }
+@media (768px >= width) {
+  .c-contents.-imgBg .c-contentsBox.-plan-text01 {
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 81%;
+  }
+}
+@media (width >= 768px) {
+  .c-contents.-imgBg .c-contentsBox.-plan-text01 {
+    top: 0%;
+    left: 25%;
+    width: 75%;
+  }
+}
+@media (768px >= width) {
+  .c-contents.-imgBg .c-contentsBox.-plan-title02 {
+    top: 11%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+  }
+}
+@media (width >= 768px) {
+  .c-contents.-imgBg .c-contentsBox.-plan-title02 {
+    top: 14%;
+    left: 10%;
+    width: 90%;
+  }
+}
+@media (768px >= width) {
+  .c-contents.-imgBg .c-contentsBox.-plan-title04 {
+    top: 11%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+  }
+}
+@media (width >= 768px) {
+  .c-contents.-imgBg .c-contentsBox.-plan-title04 {
+    top: 14%;
+    left: 9.7%;
+    width: 90%;
+  }
+}
+@media (768px >= width) {
+  .c-contents.-imgBg .c-contentsBox.-plan-text02 {
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+  }
+}
+@media (width >= 768px) {
+  .c-contents.-imgBg .c-contentsBox.-plan-text02 {
+    top: 40%;
+    left: 10%;
+    width: 66%;
+  }
+}
+@media (768px >= width) {
+  .c-contents.-imgBg .c-contentsBox.-plan-text03 {
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+  }
+}
+@media (width >= 768px) {
+  .c-contents.-imgBg .c-contentsBox.-plan-text03 {
+    top: 40%;
+    left: 10%;
+    width: 66%;
+  }
+}
+@media (768px >= width) {
+  .c-contents.-imgBg .c-contentsBox.-plan-text04 {
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+  }
+}
+@media (width >= 768px) {
+  .c-contents.-imgBg .c-contentsBox.-plan-text04 {
+    top: 40%;
+    left: 10%;
+    width: 75%;
+  }
+}
 .c-contents.-returnBtn a {
   display: block;
   width: 20%;
@@ -4575,7 +4668,6 @@ button.swiper-pagination-bullet {
 .c-contents_title {
   position: relative;
   font-size: 1.6rem;
-  font-weight: bold;
   padding: 0 1px;
 }
 @media (width >= 768px) {
@@ -4656,6 +4748,36 @@ button.swiper-pagination-bullet {
 }
 .c-contents_title.-naikanDesign::before {
   content: "INNER DESIGN";
+}
+.c-contents_title.-landscape::before {
+  content: "LANDSCAPE";
+}
+.c-contents_title.-land::before {
+  content: "LAND";
+}
+.c-contents_title.-facade::before {
+  content: "FACADE";
+  white-space: nowrap;
+}
+.c-contents_title.-interior::before {
+  content: "INTERIOR";
+  white-space: nowrap;
+}
+.c-contents_title.-eq::before {
+  content: "EQUIPMENT";
+  white-space: nowrap;
+}
+.c-contents_title.-shopping::before {
+  content: "SHOPPING";
+  white-space: nowrap;
+}
+.c-contents_title.-park::before {
+  content: "PARK";
+  white-space: nowrap;
+}
+.c-contents_title.-other::before {
+  content: "OTHER";
+  white-space: nowrap;
 }
 .c-contents_title.-layout::before {
   content: "LAYOUT PLAN / PLOT PLAN";
