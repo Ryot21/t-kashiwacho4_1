@@ -150,6 +150,20 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button{
             }
         }
     }
+    &.-grancia{
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            top: 58%;
+            left: 69%;
+            transform: translate(-50%, -50%);
+            width: 132%;
+            height: 132%;
+            background: url(../images/SVG/grancia.svg);
+            background-repeat: no-repeat;
+        }
+    }
 }
 
 // 大きさ

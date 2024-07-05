@@ -82,7 +82,9 @@
 
 
     &.-torikumi{&::before{content: "MAIN EFFORTS"; white-space: nowrap;}}            // サンプル
+    &.-landscape{&::before{content: "LANDSCAPE"; white-space: nowrap;}}            // サンプル
     &.-sample{&::before{content: "CONTENT TITLE"; white-space: nowrap;}}            // サンプル
+    &.-ground{&::before{content: "GROUND STABILITY"; white-space: nowrap;}}
 }
 
 // コンテンツ_メインタイトル

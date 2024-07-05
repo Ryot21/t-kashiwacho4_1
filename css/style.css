@@ -315,7 +315,7 @@ h1.-color02, h2.-color02, h3.-color02, h4.-color02, h5.-color02, h6.-color02, p.
   color: #4977bc !important;
 }
 h1.-color03, h2.-color03, h3.-color03, h4.-color03, h5.-color03, h6.-color03, p.-color03, a.-color03, span.-color03, label.-color03, button.-color03 {
-  color: #f2d341 !important;
+  color: #6a4928 !important;
 }
 h1.-color04, h2.-color04, h3.-color04, h4.-color04, h5.-color04, h6.-color04, p.-color04, a.-color04, span.-color04, label.-color04, button.-color04 {
   color: #a0a0a0 !important;
@@ -341,6 +341,20 @@ h1.-grayOut a, h2.-grayOut a, h3.-grayOut a, h4.-grayOut a, h5.-grayOut a, h6.-g
 }
 h1.-grayOut a::before, h1.-grayOut a::after, h2.-grayOut a::before, h2.-grayOut a::after, h3.-grayOut a::before, h3.-grayOut a::after, h4.-grayOut a::before, h4.-grayOut a::after, h5.-grayOut a::before, h5.-grayOut a::after, h6.-grayOut a::before, h6.-grayOut a::after, p.-grayOut a::before, p.-grayOut a::after, a.-grayOut a::before, a.-grayOut a::after, span.-grayOut a::before, span.-grayOut a::after, label.-grayOut a::before, label.-grayOut a::after, button.-grayOut a::before, button.-grayOut a::after {
   pointer-events: none;
+}
+h1.-grancia, h2.-grancia, h3.-grancia, h4.-grancia, h5.-grancia, h6.-grancia, p.-grancia, a.-grancia, span.-grancia, label.-grancia, button.-grancia {
+  position: relative;
+}
+h1.-grancia::after, h2.-grancia::after, h3.-grancia::after, h4.-grancia::after, h5.-grancia::after, h6.-grancia::after, p.-grancia::after, a.-grancia::after, span.-grancia::after, label.-grancia::after, button.-grancia::after {
+  content: "";
+  position: absolute;
+  top: 58%;
+  left: 69%;
+  transform: translate(-50%, -50%);
+  width: 132%;
+  height: 132%;
+  background: url(../images/SVG/grancia.svg);
+  background-repeat: no-repeat;
 }
 
 html {
@@ -2769,6 +2783,16 @@ button.swiper-pagination-bullet {
   margin: auto;
 }
 
+.w85 {
+  width: 85%;
+  margin: auto;
+}
+
+.w75 {
+  width: 75%;
+  margin: auto;
+}
+
 @media (768px >= width) {
   .w95s {
     width: 95% !important;
@@ -2779,6 +2803,13 @@ button.swiper-pagination-bullet {
 @media (768px >= width) {
   .w90s {
     width: 90% !important;
+    margin: auto;
+  }
+}
+
+@media (768px >= width) {
+  .w85s {
+    width: 85% !important;
     margin: auto;
   }
 }
@@ -3344,7 +3375,7 @@ button.swiper-pagination-bullet {
   background: #4977bc;
 }
 .c-footer__contactArea .c-footer__contactLists.-colors_04 li:hover:nth-child(3) {
-  background: #f2d341;
+  background: #6a4928;
 }
 .c-footer__contactArea .c-footer__contactLists.-colors_04 li:hover:nth-child(4) {
   background: #a0a0a0;
@@ -4600,7 +4631,7 @@ button.swiper-pagination-bullet {
   background: #4977bc !important;
 }
 .c-contents_title.-b-btm.-c03::after {
-  background: #f2d341 !important;
+  background: #6a4928 !important;
 }
 .c-contents_title.-b-btm.-c04::after {
   background: #a0a0a0 !important;
@@ -4612,7 +4643,7 @@ button.swiper-pagination-bullet {
   color: #4977bc;
 }
 .c-contents_title.-en-color03::before {
-  color: #f2d341;
+  color: #6a4928;
 }
 .c-contents_title.-en-color04::before {
   color: #a0a0a0;
@@ -4688,8 +4719,16 @@ button.swiper-pagination-bullet {
   content: "MAIN EFFORTS";
   white-space: nowrap;
 }
+.c-contents_title.-landscape::before {
+  content: "LANDSCAPE";
+  white-space: nowrap;
+}
 .c-contents_title.-sample::before {
   content: "CONTENT TITLE";
+  white-space: nowrap;
+}
+.c-contents_title.-ground::before {
+  content: "GROUND STABILITY";
   white-space: nowrap;
 }
 
@@ -5357,39 +5396,17 @@ button.swiper-pagination-bullet {
     margin-left: 15px;
   }
 }
+.c-flex.-col2_4 {
+  flex-wrap: wrap;
+}
 @media (768px >= width) {
   .c-flex.-col2_4 li {
-    width: calc(50% - 5px);
-  }
-  .c-flex.-col2_4 li:nth-child(odd) {
-    margin-right: 5px;
-  }
-  .c-flex.-col2_4 li:nth-child(even) {
-    margin-left: 5px;
+    width: 47.5%;
   }
 }
 @media (width >= 768px) {
   .c-flex.-col2_4 li {
-    width: calc(25% - 10px);
-  }
-  .c-flex.-col2_4 li:nth-child(1) {
-    margin-right: 10px;
-  }
-  .c-flex.-col2_4 li:nth-child(2), .c-flex.-col2_4 li:nth-child(3) {
-    margin: 0 5px;
-  }
-  .c-flex.-col2_4 li:nth-child(4) {
-    margin-left: 10px;
-  }
-}
-@media (width >= 768px) {
-  .c-flex.-col2_4 li.text {
-    width: calc(35% - 15px);
-  }
-}
-@media (width >= 768px) {
-  .c-flex.-col2_4 li.img {
-    width: calc(65% - 15px);
+    width: 23.5%;
   }
 }
 .c-flex.-col5 li {
@@ -5651,10 +5668,10 @@ button.swiper-pagination-bullet {
   color: #4977bc;
 }
 .c-tabArea .tab-item.-c03 {
-  border-bottom: 1px solid #f2d341;
+  border-bottom: 1px solid #6a4928;
 }
 .c-tabArea .tab-item.-c03 span {
-  color: #f2d341;
+  color: #6a4928;
 }
 .c-tabArea .tab-item.-c04 {
   border-bottom: 1px solid #a0a0a0;
@@ -5693,10 +5710,10 @@ button.swiper-pagination-bullet {
 }
 .c-tabArea input:checked + .tab-item.-c03 {
   color: #ffffff !important;
-  background: #f2d341;
-  border-top: 1px solid #f2d341;
-  border-left: 1px solid #f2d341;
-  border-right: 1px solid #f2d341;
+  background: #6a4928;
+  border-top: 1px solid #6a4928;
+  border-left: 1px solid #6a4928;
+  border-right: 1px solid #6a4928;
 }
 .c-tabArea input:checked + .tab-item.-c03 span {
   color: #ffffff;
@@ -6707,10 +6724,10 @@ a {
   color: #4977bc;
 }
 .c-tabArea .tab-item.-c03 {
-  border-bottom: 1px solid #f2d341;
+  border-bottom: 1px solid #6a4928;
 }
 .c-tabArea .tab-item.-c03 span {
-  color: #f2d341;
+  color: #6a4928;
 }
 .c-tabArea .tab-item.-c04 {
   border-bottom: 1px solid #a0a0a0;
@@ -6749,10 +6766,10 @@ a {
 }
 .c-tabArea input:checked + .tab-item.-c03 {
   color: #ffffff !important;
-  background: #f2d341;
-  border-top: 1px solid #f2d341;
-  border-left: 1px solid #f2d341;
-  border-right: 1px solid #f2d341;
+  background: #6a4928;
+  border-top: 1px solid #6a4928;
+  border-left: 1px solid #6a4928;
+  border-right: 1px solid #6a4928;
 }
 .c-tabArea input:checked + .tab-item.-c03 span {
   color: #ffffff;
@@ -6841,7 +6858,7 @@ a {
 }
 .d-menu__item.-top:hover {
   color: #ffffff;
-  background: #f2d341 !important;
+  background: #6a4928 !important;
 }
 .d-menu__item.-btm {
   border-bottom: 1px solid #636363;
