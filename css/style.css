@@ -7086,7 +7086,7 @@ a {
 }
 @media (width >= 768px) {
   .p-equipment .border-bottom {
-    width: 70vw;
+    width: 100%;
     margin: 0 auto 12vh;
   }
 }
