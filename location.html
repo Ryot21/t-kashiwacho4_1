@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>周辺環境 | GRANCIA志木 ～自由設計の土地分譲～</title>                                                               <!-- タイトルの頭に【...】はつけない -->
+    <title>周辺環境 | GRANCIA志木 ～志木市柏町4丁目～</title>                                                               <!-- タイトルの頭に【...】はつけない -->
     <link rel="icon" href="images/favicon.ico">                                                   <!-- 32px x 32px -->
     <link rel="apple-touch-icon" type="image/png" href="images/sns/apple-touch-icon/grancia.jpg"> <!-- 120px x 120px -->
 
     <!-- デプロイ前に確認・サンプル -->
-    <meta name="keywords"    content="志木市,地名,建築条件付き土地,グランシア,住協">
+    <meta name="keywords" content="志木市,柏町,東武東上線,柳瀬川駅,北朝霞駅,朝霞台駅,みずほ台,建築条件付土地,グランシア,住協">
     <meta name="description" content="「志木」駅東口から市役所へと至るエリア。まさに暮らしの中枢ともいえる施設や機能が集約されたアドレスです。
 賑やかな駅前エリアは大型施設以外にも、駅東口には「しきアロハ商店会」、南口には「志木駅南口商店会」といった商店街があり、個性豊かな店舗が並びます。">
 
@@ -17,7 +17,7 @@
     <meta property="og:url"          content="https://www.jyu-g.co.jp/special/kashiwacho4_1/location.html">
     <meta property="og:type"         content="article">                                         <!-- Top：website、下層ページ：article -->
     <meta property="og:site_name"    content="住協グループの住まい情報"/>                         <!-- ページが属する大元のサイト名 -->
-    <meta property="og:title"        content="周辺環境 | GRANCIA志木 ～自由設計の土地分譲～">                                <!-- SNS表示用のタイトル -->
+    <meta property="og:title"        content="周辺環境 | GRANCIA志木 ～志木市柏町4丁目～">                                <!-- SNS表示用のタイトル -->
     <meta property="og:description"  content="「志木」駅東口から市役所へと至るエリア。まさに暮らしの中枢ともいえる施設や機能が集約されたアドレスです。
 賑やかな駅前エリアは大型施設以外にも、駅東口には「しきアロハ商店会」、南口には「志木駅南口商店会」といった商店街があり、個性豊かな店舗が並びます。">                                                <!-- 通常のdescriptionと同じ内容 -->
     <meta property="og:image"        content="images/sns/share.jpg">                            <!-- SNS表示用のサムネイル 1200px × 630px -->
@@ -724,7 +724,22 @@
 
             <!---------- モーダル関係 ---------->
             <div class="">
-                <input type="checkbox" id="popup02" ><!-- popup01 -->
+                <input type="checkbox" id="popup01" ><!-- popup01 -->
+                <label class="popup-overlay" for="popup01"></label>
+                <div class="popup-window">
+                    <!-- 閉じるボタン -->
+                    <label class="popup-close" for="popup01">
+                        <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="0" y1="0" x2="18" y2="18" stroke="white" stroke-width="3"></line>
+                            <line x1="0" y1="18" x2="18" y2="0" stroke="white" stroke-width="3"></line>
+                        </svg>
+                    </label>
+                    <!-- iframe -->
+                    <iframe id="inlineFrame01" title="Inline Frame Example" src="https://www.jyu-g.co.jp/contents/detail/712998784"></iframe>
+                </div>
+            </div>
+            <div class="">
+                <input type="checkbox" id="popup02" ><!-- popup02 -->
                 <label class="popup-overlay" for="popup02"></label>
                 <div class="popup-window">
                     <!-- 閉じるボタン -->
@@ -735,7 +750,7 @@
                         </svg>
                     </label>
                     <!-- iframe -->
-                    <iframe id="inlineFrame01" title="Inline Frame Example" src="https://www.jyu-g.co.jp/contents/detail/712972338"></iframe>
+                    <iframe id="inlineFrame02" title="Inline Frame Example" src="https://www.jyu-g.co.jp/contents/detail/712998784"></iframe>
                 </div>
             </div>
 
