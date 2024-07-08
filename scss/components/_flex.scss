@@ -47,9 +47,6 @@
     // コンテンツ_カラム（sp:pc 1:2）
     &.-col1_2{
         flex-wrap: wrap;
-        @include min(768){
-            flex-wrap: nowrap;
-        }
         li{
             width: 100%;
             @include min(768){
@@ -61,16 +58,16 @@
                     margin-left: 15px;
                 }
             }
-            &.text{
-                @include min(768){
-                    width: calc(35% - 15px);
-                }
-            }
-            &.img{
-                @include min(768){
-                    width: calc(65% - 15px);
-                }
-            }
+            // &.text{
+            //     @include min(768){
+            //         width: calc(35% - 15px);
+            //     }
+            // }
+            // &.img{
+            //     @include min(768){
+            //         width: calc(65% - 15px);
+            //     }
+            // }
         }
         &.-r{
             li{
@@ -119,88 +116,16 @@
     &.-col2_2{
         flex-wrap: wrap;
         li{
-            width: calc(50% - 5px);
+            width: 48.5%;
             margin: 0;
-            &:nth-child(odd){margin-right: 5px;}
-            &:nth-child(even){margin-left: 5px;}
-            @include min(768){
-                width: calc(50% - 15px);
-                &:nth-child(odd){margin-right: 15px;}
-                &:nth-child(even){margin-left: 15px;}
-            }
-            &.text{
-                @include min(768){width: calc(35% - 15px);}
-            }
-            &.img{
-                @include min(768){width: calc(65% - 15px);}
-            }
         }
-        &.-r{
+        &.-tab{
             li{
-                width: calc(50% - 5px);
-                margin: 0;
-                &:nth-child(odd){margin-left: 5px;}
-                &:nth-child(even){margin-right: 5px;}
+                &:nth-child(1){width: 25%;}
+                &:nth-child(2){width: 70%;}
                 @include min(768){
-                    width: calc(50% - 15px);
-                    &:nth-child(odd){margin-left: 15px;}
-                    &:nth-child(even){margin-right: 15px;}
-                }
-                &.text{
-                    @include min(768){width: calc(35% - 15px);}
-                }
-                &.img{
-                    @include min(768){width: calc(65% - 15px);}
-                }
-            }
-        }
-        &__in{// コンテンツ > コンテンツアイテム
-            li{
-                width: calc(50% - 5px) !important;
-                margin: 0;
-                &:nth-child(odd){
-                    margin-right: 5px !important;
-                    margin-left: auto !important;
-                }
-                &:nth-child(even){
-                    margin-right: auto !important;
-                    margin-left: 5px !important;
-                }
-                @include min(768){
-                    width: calc(50% - 15px);
-                    &:nth-child(odd){
-                        margin-right: 15px !important;
-                        margin-left: auto !important;
-                    }
-                    &:nth-child(even){
-                        margin-right: auto !important;
-                        margin-left: 15px !important;
-                    }
-                }
-                &.text{
-                    @include min(768){width: calc(35% - 15px) !important;}
-                }
-                &.img{
-                    @include min(768){width: calc(65% - 15px) !important;}
-                }
-            }
-            &.-r{
-                li{
-                    width: calc(50% - 5px);
-                    margin: 0 !important;
-                    &:nth-child(odd){margin-left: 5px !important;}
-                    &:nth-child(even){margin-right: 5px !important;}
-                    @include min(768){
-                        width: calc(50% - 15px);
-                        &:nth-child(odd){margin-left: 15px !important;}
-                        &:nth-child(even){margin-right: 15px !important;}
-                    }
-                    &.text{
-                        @include min(768){width: calc(35% - 15px);}
-                    }
-                    &.img{
-                        @include min(768){width: calc(65% - 15px);}
-                    }
+                    &:nth-child(1){width: 25%;}
+                    &:nth-child(2){width: 70%;}
                 }
             }
         }
@@ -258,26 +183,8 @@
     &.-col2_3{
         flex-wrap: wrap;
         li{
-            width: calc(50% - 5px);
-            @include max(768){
-                &:nth-child(odd){margin-right: 5px;}
-                &:nth-child(even){margin-left: 5px;}
-            }
-            @include min(768){
-                width: calc(33% - 15px);
-                &:nth-child(1),
-                &:nth-child(4),
-                &:nth-child(7),
-                &:nth-child(10){margin-right: 15px;}
-                &:nth-child(2),
-                &:nth-child(5),
-                &:nth-child(8),
-                &:nth-child(11){margin: 0 7.5px;}
-                &:nth-child(3),
-                &:nth-child(6),
-                &:nth-child(9),
-                &:nth-child(12){margin-left: 15px;}
-            }
+            width: 48.5%;
+            @include min(768){width: 32.5%;}
         }
     }
     // コンテンツカラム（sp:pc 2:4）

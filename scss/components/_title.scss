@@ -94,7 +94,13 @@
     &.-landscape{&::before{content: "LANDSCAPE"; white-space: nowrap;}}            // サンプル
     &.-sample{&::before{content: "CONTENT TITLE"; white-space: nowrap;}}            // サンプル
     &.-ground{&::before{content: "GROUND STABILITY"; white-space: nowrap;}}
+    &.-green{&::before{content: "GREEN MOISTURE"; white-space: nowrap;}}
+    &.-education{&::before{content: "EDUCATION"; white-space: nowrap;}}
+    &.-way{&::before{content: "3WAY&DIRECT"; white-space: nowrap;}}
+    &.-express{&::before{content: "FIRST STATION&EXPRESS"; white-space: nowrap;}}
+    &.-bus{&::before{content: "AIRPORT BUS"; white-space: nowrap;}}
 }
+
 
 // コンテンツ_メインタイトル
 .c-contents_MainTitle{// .s-L相当

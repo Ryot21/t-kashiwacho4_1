@@ -468,6 +468,33 @@
 					width: 75%;
 				}
 			}
+
+			&.-location-title01{
+				@include max(768){
+					top: 11%;
+					left: 60%;
+					transform: translate(-50%, -50%);
+					width: 80%;
+				}
+				@include min(768){
+					top: 14%;
+					left: 9.7%;
+					width: 90%;
+				}
+			}
+			&.-location-text01{
+				@include max(768){
+					top: 48%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					width: 95%;
+				}
+				@include min(768){
+					top: 40%;
+					left: 10%;
+					width: 90%;
+				}
+			}
 		}
 	}
 
